@@ -31,7 +31,7 @@ app.use(passport.session());
 
 //app routes
 app.get('/', function(req, res){
-	res.render('welcome-screen', { user: req.user });
+	res.render('index', { user: req.user });
 });
 
 app.get('/logged', function(req, res){
